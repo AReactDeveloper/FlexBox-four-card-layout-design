@@ -58,9 +58,7 @@ body {
   background-color: var(--very-light-gray);
 }
 
-main {
-  min-height: 100vh;
-}
+
 
 .text-bold {
   font-weight: bold;
