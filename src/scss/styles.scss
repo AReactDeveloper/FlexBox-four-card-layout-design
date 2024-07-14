@@ -1,0 +1,79 @@
+@use 'root';
+@use 'reset';
+@use 'base';
+@use 'utility';
+
+.header{
+    margin-top: 3.75rem;
+    margin-bottom: 3.350rem;
+    text-align: center;
+    color: var(--very-dark-blue);
+    &-title{
+        font-size: 2.1rem;
+        font-weight: 200;
+        letter-spacing: 1.5px;
+        line-height: 1.4;
+        padding: 1.563rem;
+    }
+    &-description{
+        font-size: 0.938rem;
+        line-height: 1.8;
+        display: block;
+        color: var(--grayish-blue);
+    }
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.875rem;
+    padding: 10px;
+}
+
+.dbCard{
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    max-width: 21.875rem;
+    max-height: 15.625rem;
+    padding: 1.875rem;
+    background-color:var(--clr-white);
+    box-shadow: 2px 15px  30px rgba(85, 85, 85, 0.2);
+    &-title{
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: (--very-dark-blue);
+    }
+    &-text{
+        font-size: 0.8rem;
+        color: var(--grayish-blue);
+        margin-top: 0.8rem;
+        line-height: 1.5;
+    }
+    & img{
+        align-self: flex-end;
+        margin-top: 2.5rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    main{
+        padding: 0.625rem;
+    }
+    .cards{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.875rem;
+        padding: 0.625rem;
+    }
+}
